@@ -4,18 +4,17 @@
 cd src/coreapi
 dotnet restore
 dotnet build
-dotnet publish -r win10-x64 --output bin/dist/win
+dotnet publish -r win10-x64 --self-contained --output bin/dist/win
 
 :: publish angular project
 cd ../angularweb
 ::npm install
-pause
-ng build
-pause
+
+cmd /c ng build --base-href ./
+
 
 :: publish electron project
 cd ../
-npm install
+:: CMD /C npm install
 
-
-npm start
+cmd /c npm start

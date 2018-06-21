@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   listUsers(): void {
-    this.http.get<any>(`http://localhost:5000/api/values`).subscribe(data => {
+    this.http.get<any>(`http://localhost:5000/home/users`).subscribe(data => {
       this.users = data;
     });
   }
