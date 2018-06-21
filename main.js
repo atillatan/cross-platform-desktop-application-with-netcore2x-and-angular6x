@@ -89,7 +89,7 @@ function createMainWindow() {
                     }
                 },
                 {
-                    role: 'reload'
+                    role: 'reload'                                   
                 }
             ]
         })
