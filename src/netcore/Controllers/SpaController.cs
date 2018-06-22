@@ -1,16 +1,15 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-public class HomeController : Controller{
-
-        public IActionResult Index()
-        {
-            return File("index.html", "text/html");
-        }
-        // GET api/values
+namespace netcore.Controllers
+{
+    [Route("[controller]/[action]")]
+    public class SpaController : Controller
+    {
+        // GET spa/getusers
         [HttpGet]
-        public IEnumerable<dynamic> Users()
-        {   
+        public IEnumerable<dynamic> GetUsers()
+        {
             return new List<dynamic> {
                 new { Name = "Bob", FamilyName = "Smith", Age = 32, email = "test1" },
                 new { Name = "Alice", FamilyName = "Smith", Age = 33, email = "test2" },
@@ -18,4 +17,5 @@ public class HomeController : Controller{
                 new { Name = "Adam", FamilyName = "Smith", Age = 32, email = "test4" }
              };
         }
+    }
 }

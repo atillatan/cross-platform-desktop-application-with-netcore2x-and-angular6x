@@ -15,7 +15,6 @@ var apiProcess = null;
 // #region Events
 app.on('ready', init);
 
-
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') {
         app.quit()
@@ -29,14 +28,13 @@ app.on('activate', function () {
 });
 
 process.on('exit', function () {
-    console.log('exit');
+    console.log('Exit electron application..');
     apiProcess.kill();
 });
-
 // #endregion
 
 function init() {
-    startCoreApi();
+    startNetCoreApi();
     createMainWindow();
 }
 
@@ -44,18 +42,13 @@ function createMainWindow() {
     console.log('start');
     //create new window
     mainWindow = new BrowserWindow({
-        width: 800,
+        width: 920,
         height: 600,
         frame: true,
-        resizable: false
+        resizable: true
     });
-    // Load html into window
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'src/angularweb/dist/angularweb/index.html'),
-        protocol: 'file:',
-        slashes: true,
-    }));
 
+    mainWindow.loadURL('http://localhost:5000/index.html');
     // Quit app when closed
     mainWindow.on('close', function (e) {
         mainWindow = null;
@@ -89,7 +82,7 @@ function createMainWindow() {
                     }
                 },
                 {
-                    role: 'reload'                                   
+                    role: 'reload'
                 }
             ]
         })
@@ -102,17 +95,22 @@ function createMainWindow() {
 }
 
 
-function startCoreApi() {
-    var proc = require('child_process').spawn;
+function startNetCoreApi() {
+    var spawn = require('child_process').spawn;
 
-    var apiPath = path.join(__dirname, 'src\\coreapi\\bin\\dist\\win\\coreapi.exe')
+    const wokingDirectory = '../../dist/netcore/win';
+    var apiPath = path.join(__dirname, '../../dist/netcore/win' , '/netcore.exe');
+
     if (os.platform() === 'darwin') {
-        apiPath = path.join(__dirname, 'src//coreapi//bin//dist//osx//coreapi')
+        wokingDirectory = '../../dist/netcore/osx';
+        apiPath = path.join(__dirname, '../../dist/netcore/osx' , '//netcore');
     }
 
     console.log(apiPath);
 
-    apiProcess = proc(apiPath);
+    apiProcess = spawn(apiPath, {
+        cwd: wokingDirectory
+    });
 
     apiProcess.stdout.on('data', (data) => {
         console.log(`stdout: ${data}`);
