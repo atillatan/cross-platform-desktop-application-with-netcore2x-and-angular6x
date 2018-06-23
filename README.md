@@ -10,8 +10,8 @@ This project introduce simple cross platform destop application with .Net Core 2
 
 ## Download 
 
-Windows Version: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)
-MacOs Version: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)
+Windows Version: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)</br>
+MacOs Version: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)</br>
 Linux: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)
  
 
