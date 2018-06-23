@@ -43,8 +43,8 @@
       "output": "../../dist/electron"
     },
     "extraResources": {
-      "from": "../../dist/netcore/win/",
-      "to": "dist/netcore/win",
+      "from": "../../dist/netcore/",
+      "to": "dist/netcore",
       "filter": [
         "**/*"
       ]

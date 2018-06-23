@@ -99,10 +99,14 @@ function startNetCoreApi() {
     var spawn = require('child_process').spawn;
 
     var wokingDirectory = path.join(__dirname, '../../dist/netcore');
+
+    if(process.env.NODE_ENV === 'production'){
+        wokingDirectory = path.join(__dirname, '../dist/netcore');
+    }
+
     var apiPath = path.join(wokingDirectory, '/netcore.exe');
 
     if (os.platform() === 'darwin') {
-        wokingDirectory = path.join(__dirname, '../../dist/netcore');
         apiPath = path.join(wokingDirectory, '//netcore');
     }
 
