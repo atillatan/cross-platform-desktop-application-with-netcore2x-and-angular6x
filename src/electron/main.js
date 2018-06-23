@@ -98,12 +98,12 @@ function createMainWindow() {
 function startNetCoreApi() {
     var spawn = require('child_process').spawn;
 
-    const wokingDirectory = '../../dist/netcore/win';
-    var apiPath = path.join(__dirname, '../../dist/netcore/win' , '/netcore.exe');
+    var wokingDirectory = path.join(__dirname, '../../dist/netcore');
+    var apiPath = path.join(wokingDirectory, '/netcore.exe');
 
     if (os.platform() === 'darwin') {
-        wokingDirectory = '../../dist/netcore/osx';
-        apiPath = path.join(__dirname, '../../dist/netcore/osx' , '//netcore');
+        wokingDirectory = path.join(__dirname, '../../dist/netcore');
+        apiPath = path.join(wokingDirectory, '//netcore');
     }
 
     console.log(apiPath);
