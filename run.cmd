@@ -8,7 +8,7 @@ dotnet publish -r win10-x64 --self-contained --output ../../dist/netcore
 
 :: publish angular project
 cd ../angular
-npm install
+:: npm install
 
 cmd /c ng build --base-href ./
 

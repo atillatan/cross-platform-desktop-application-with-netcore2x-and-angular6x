@@ -10,8 +10,7 @@ This project introduce simple cross platform destop application with .Net Core 2
 
 ## Download 
 
-Windows Version: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)</br>
-MacOs Version: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)</br>
-Linux: [http://atilla.tanrikulu.biz/...](http://atilla.tanrikulu.biz/...)
- 
+Windows Version: [Download](https://github.com/atillatan/cross-platform-desktop-application-with-netcore2x-and-angular6x/raw/master/build/cross-platform-desktop-application-with-netcore2x-and-angular6x-1.0.0.dmg)</br>
+Mac Version: [Download](https://github.com/atillatan/cross-platform-desktop-application-with-netcore2x-and-angular6x/raw/master/build/cross-platform-desktop-application-with-netcore2x-and-angular6x-1.0.0.exe)</br>
+
 
