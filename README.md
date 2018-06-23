@@ -1,6 +1,6 @@
-# Cross Platform Destop Application With .Net Core 2x and Angular 6x
+# Cross Platform Desktop Application With .Net Core 2x and Angular 6x
 
-This project introduce simple cross platform destop application with .Net Core 2 and Angular 6 in Electron environment.
+This project introduce simple cross platform desktop application with .Net Core 2 and Angular 6 in Electron environment.
 
 ![interface.PNG](interface.PNG)
 
