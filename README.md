@@ -10,7 +10,7 @@ This project introduce simple cross platform desktop application with .Net Core 
 
 ## Download 
 
-Windows Version: [Download](https://github.com/atillatan/cross-platform-desktop-application-with-netcore2x-and-angular6x/raw/master/build/cross-platform-desktop-application-with-netcore2x-and-angular6x-1.0.0.dmg)</br>
-Mac Version: [Download](https://github.com/atillatan/cross-platform-desktop-application-with-netcore2x-and-angular6x/raw/master/build/cross-platform-desktop-application-with-netcore2x-and-angular6x-1.0.0.exe)</br>
+Windows Version: [Download](https://github.com/atillatan/cross-platform-desktop-application-with-netcore2x-and-angular6x/raw/master/build/cross-platform-desktop-application-with-netcore2x-and-angular6x%20Setup%201.0.0.exe)</br>
+Mac Version: [Download](https://github.com/atillatan/cross-platform-desktop-application-with-netcore2x-and-angular6x/raw/master/build/cross-platform-desktop-application-with-netcore2x-and-angular6x-1.0.0.dmg)</br>
 
 
