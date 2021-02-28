@@ -1,7 +1,7 @@
 {
-  "name": "cross-platform-desktop-application-with-netcore2x-and-angular6x",
+  "name": "gmail-atillatan",
   "version": "1.0.0",
-  "description": "Cross Platform Desktop Application with .Net Core 2 and Angular 6",
+  "description": "gmail for minimalist",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

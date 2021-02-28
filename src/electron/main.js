@@ -34,7 +34,7 @@ process.on('exit', function () {
 // #endregion
 
 function init() {
-    startNetCoreApi();
+    //startNetCoreApi();
     createMainWindow();
 }
 
@@ -48,7 +48,8 @@ function createMainWindow() {
         resizable: true
     });
 
-    mainWindow.loadURL('http://localhost:5000/index.html');
+    //mainWindow.loadURL('http://localhost:5000/index.html');
+    mainWindow.loadURL('https://mail.google.com');
     // Quit app when closed
     mainWindow.on('close', function (e) {
         mainWindow = null;

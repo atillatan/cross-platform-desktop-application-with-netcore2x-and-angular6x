@@ -17,3 +17,4 @@ cd ../electron
 npm install
 
 npm start
+ç
